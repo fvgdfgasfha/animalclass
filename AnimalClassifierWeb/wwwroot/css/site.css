@@ -1,0 +1,32 @@
+.result-box {
+    background: linear-gradient(135deg, #f8f9fa, #ffffff);
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid #e9ecef;
+}
+
+.result-label {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0d6efd;
+    text-transform: capitalize;
+}
+
+.progress {
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .card:hover {
+        transform: translateY(-3px);
+    }

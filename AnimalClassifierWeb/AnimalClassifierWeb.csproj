@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="MLModel\MLModel1.mlnet" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="MLModel\MLModel1.mlnet">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.ML" Version="5.0.0" />
+		<PackageReference Include="Microsoft.ML.ImageAnalytics" Version="5.0.0" />
+		<PackageReference Include="Microsoft.ML.Vision" Version="5.0.0" />
+		<PackageReference Include="SciSharp.TensorFlow.Redist" Version="2.16.0" />
+	</ItemGroup>
+
+</Project>
